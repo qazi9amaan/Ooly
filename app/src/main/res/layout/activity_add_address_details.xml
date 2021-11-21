@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frags.Home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="409dp"
+            android:layout_height="288dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gradient_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:visibility="gone"
+            android:id="@+id/progessbar"
+            android:layout_width="match_parent"
+            android:indeterminate="true"
+            android:layout_height="5dp"
+            android:progressBackgroundTint="#E5A0C1"
+            android:indeterminateOnly="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_narrow_left" />
+
+        </LinearLayout>
+
+        <!--  bookng           -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:lineHeight="41sp"
+            android:text="add an address"
+            android:textColor="#E5A0C1"
+            android:textSize="49sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:layout_marginTop="-82dp"
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+
+
+                <EditText
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:inputType="text"
+
+                    android:id="@+id/name"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/edit_text_add_details_bg"
+                    android:fontFamily="@font/nunito_regular"
+                    android:hint="Name"
+                    android:textSize="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <requestFocus/>
+                </EditText>
+
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+
+
+            <EditText
+
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:inputType="number"
+
+                android:id="@+id/phoneNumber"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:maxLength="10"
+                android:background="@drawable/edit_text_add_details_bg"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="Phone number"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content">
+
+
+
+                        <EditText
+                            android:imeOptions="actionNext"
+                            android:maxLines="1"
+                            android:inputType="number"
+
+                            android:maxLength="6"
+                            android:id="@+id/Pincode"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:background="@drawable/edit_text_add_details_bg"
+                            android:fontFamily="@font/nunito_regular"
+                            android:hint="Pincode"
+                            android:textSize="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <View
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_height="1dp"
+                            android:layout_width="match_parent"
+                            android:background="#F0EFF1"
+                            />
+                    </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/District"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:background="@drawable/edit_text_add_details_bg"
+                        android:fontFamily="@font/nunito_regular"
+                        android:hint="District"
+                        android:textSize="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="#F0EFF1"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/state"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/edit_text_add_details_bg"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="State"
+                android:textSize="25dp"
+
+
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+
+            <EditText
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:inputType="text"
+
+                android:id="@+id/area"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:background="@drawable/edit_text_add_details_bg"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="Area, city,village,etc"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+
+
+            <EditText
+                android:imeOptions="actionDone"
+                android:inputType="text"
+
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+
+                android:id="@+id/address"
+                android:maxLines="2"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/edit_text_add_details_bg"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="Address"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/nxtBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_button_rounded_enabled_list"
+            android:padding="10dp"
+            android:text="Next"
+            android:enabled="false"
+            app:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintVertical_bias="0.942"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

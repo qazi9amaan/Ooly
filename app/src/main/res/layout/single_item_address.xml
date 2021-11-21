@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/viewMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0EFF1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:layout_editor_absoluteX="20dp">
+
+       <LinearLayout
+           android:id="@+id/selectItem"
+           android:paddingLeft="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_gravity="center"
+               android:background="@drawable/bg_rounded_circle_dashed"
+               android:src="@drawable/ic_home_active_filled"
+               app:tint="@color/grey" />
+
+           <LinearLayout
+               android:layout_width="260dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="15dp"
+               android:layout_marginBottom="15dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/nunito_bold"
+                   android:letterSpacing=".02"
+                   android:text="fetching...."
+                   android:textColor="@color/black"
+                   android:textSize="19sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/address"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/nunito_regular"
+                   android:text="fetcing..."
+                   android:textColor="#808089"
+                   android:textSize="14sp" />
+           </LinearLayout>
+       </LinearLayout>
+        <LinearLayout
+            android:id="@+id/showDetails"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center|end"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center|end"
+                android:src="@drawable/ic_eye"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

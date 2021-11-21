@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frags.Home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gradient_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_narrow_left" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginRight="-25dp"
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="4dp"
+            android:scaleType="centerCrop"
+            android:scaleX="-1"
+            android:src="@drawable/marginalia_delivery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <!--  bookng           -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:lineHeight="35sp"
+            android:text="ship any packageee."
+            android:textColor="#E5A0C1 "
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_regular"
+            android:lineHeight="39sp"
+            android:text="baradar on time"
+            android:textColor="#808089"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <LinearLayout
+            android:layout_marginTop="-20dp"
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <View
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/showPickupArea"
+                    android:orientation="horizontal"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/pickupAreaImage"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_rounded_circle_dashed"
+                        android:src="@drawable/ic_plus_black"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/pickupAreaHeading"
+                            android:letterSpacing=".02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Choose pickup"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/pickupAreaBody"
+                            android:fontFamily="@font/nunito_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="We will pickup the parcel from here.."
+                            android:textColor="#808089"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/editPickUpArea"
+                    android:paddingRight="8dp"
+                    android:gravity="center|end"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:tint="@color/grey"
+                        android:src="@drawable/ic_pencil"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/showDropArea"
+                    android:layout_width="320dp"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/dropAreaImage"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_rounded_circle_dashed"
+                        android:src="@drawable/ic_plus_black"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/dropAreaHeading"
+                            android:letterSpacing=".02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Choose drop"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dropAreaBody"
+                            android:fontFamily="@font/nunito_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="We will drop the parcel  here. "
+                            android:textColor="#808089"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/dropArea"
+                    android:paddingRight="8dp"
+                    android:gravity="center|end"
+                    android:layout_gravity="center|end"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_pencil"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:tint="@color/grey" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+            <LinearLayout
+                android:id="@+id/parcelDetails"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/parcelDetailsImage"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_rounded_circle_dashed"
+                    android:src="@drawable/ic_plus_black"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/parcelDetailsHeading"
+                        android:letterSpacing=".02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Parcel details"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/parcelDetailsBody"
+                        android:fontFamily="@font/nunito_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What’s inside the parcel? "
+                        android:textColor="#808089"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/ContinueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_button_rounded_enabled_list"
+            android:enabled="false"
+            android:padding="10dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

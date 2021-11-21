@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="#F5F5FA"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bookings.BookingDetailsActivity">
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="25dp"
+        android:paddingLeft="18dp"
+        android:paddingBottom="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_narrow_left" />
+
+        <TextView
+            android:id="@+id/mainOrderId"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito_extrabold"
+            android:textSize="20dp"
+            android:text="Order 10101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-40dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <ImageView
+                    android:paddingTop="35dp"
+                    android:id="@+id/view_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main_scooter_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.shuhart.stepview.StepView
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rounded_bg_order_details_status"
+                    android:id="@+id/step_view"
+                     android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    app:sv_steps="@array/steps_order"
+                    app:sv_stepsNumber="4"
+                    android:padding="15dp"
+                    app:sv_selectedCircleColor="#CBE8A9"
+                    app:sv_selectedTextColor="@color/black"
+                    app:sv_stepLineWidth="2dp"
+                    app:sv_stepPadding="1dp"
+                    app:sv_nextStepLineColor="#DDDDDD"
+                    app:sv_doneCircleColor="#4CAF50"
+                    app:sv_doneStepLineColor="#4CAF50"
+                    app:sv_nextTextColor="@color/grey"
+                    app:sv_selectedStepNumberColor="#228126"
+                    app:sv_textSize="12dp"
+                    app:sv_nextStepCircleColor="#DDDDDD"
+                    app:sv_nextStepCircleEnabled="true"
+                    app:sv_doneTextColor="#272727"
+                    app:sv_doneStepMarkColor="@color/white"
+                    />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:textColor="#27272A"
+                            android:text="General info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:background="@drawable/rounded_bg_order_details_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:paddingTop="11dp"
+                                android:paddingBottom="11dp"
+
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="20sp"
+                                    android:fontFamily="@font/nunito_regular"
+                                    android:textColor="#27272A"
+                                    android:alpha=".5"
+                                    android:text="Order id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/orderid"
+                                        android:textSize="20sp"
+                                        android:fontFamily="@font/nunito_bold"
+                                        android:textColor="#27272A"
+                                        android:text=""
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <View
+                                android:alpha=".2"
+                                android:background="@color/grey"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+                            <LinearLayout
+                                android:paddingTop="11dp"
+                                android:paddingBottom="11dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="20sp"
+                                    android:fontFamily="@font/nunito_regular"
+                                    android:textColor="#27272A"
+                                    android:alpha=".5"
+                                    android:text="Booked on"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/orderDate"
+                                        android:text=""
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/nunito_bold"
+                                        android:textColor="#27272A"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_bold"
+
+                            android:text="Shipping details"
+                            android:textColor="#27272A"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:padding="16dp"
+                            android:orientation="vertical"
+                            android:background="@drawable/rounded_bg_order_details_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginTop="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_marginTop="5dp"
+                                    android:layout_gravity="top"
+                                    android:src="@drawable/pickup_img_booking"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"/>
+
+                                <LinearLayout
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textSize="18sp"
+                                        android:fontFamily="@font/nunito_regular"
+                                        android:textColor="#27272A"
+                                        android:id="@+id/pickUpname"
+                                        android:text="Pickup"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+
+                                    <TextView
+                                        android:id="@+id/pickUpaddress"
+                                        android:textSize="16sp"
+                                        android:fontFamily="@font/nunito_regular"
+                                        android:textColor="#27272A"
+                                        android:alpha=".5"
+                                        android:text=""
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <View
+                                android:alpha=".2"
+                                android:background="@color/grey"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+
+                            <LinearLayout
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_marginTop="5dp"
+                                    android:layout_gravity="top"
+                                    android:src="@drawable/live_area"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <TextView
+                                        android:id="@+id/dropName"
+                                        android:textSize="18sp"
+                                        android:fontFamily="@font/nunito_regular"
+                                        android:textColor="#27272A"
+                                        android:text=""
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+
+                                    <TextView
+                                        android:id="@+id/dropAddress"
+                                        android:textSize="16sp"
+                                        android:fontFamily="@font/nunito_regular"
+                                        android:textColor="#27272A"
+                                        android:alpha=".5"
+                                        android:text="General info"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_bold"
+                            android:textSize="20sp"
+                            android:textColor="#27272A"
+                            android:text="Payment details"/>
+
+                        <LinearLayout
+                            android:padding="16dp"
+                            android:orientation="vertical"
+                            android:background="@drawable/rounded_bg_order_details_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:padding="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="20sp"
+                                    android:fontFamily="@font/nunito_regular"
+                                    android:textColor="#27272A"
+                                    android:alpha=".5"
+                                    android:text="Pay on pickup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/payOnPickup"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/nunito_bold"
+                                        android:text=""
+                                        android:textColor="#27272A"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <View
+                                android:alpha=".45"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/grey"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+                            <LinearLayout
+                                android:padding="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="20sp"
+                                    android:fontFamily="@font/nunito_regular"
+                                    android:textColor="#27272A"
+                                    android:alpha=".5"
+                                    android:text="Cost"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/cost"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/nunito_bold"
+                                        android:text=""
+                                        android:textColor="#27272A"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+            </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

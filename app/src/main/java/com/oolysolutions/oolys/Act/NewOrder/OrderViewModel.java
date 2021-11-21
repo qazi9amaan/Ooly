@@ -1,0 +1,47 @@
+package com.oolysolutions.oolys.Act.NewOrder;
+
+import android.app.Application;
+
+import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.MutableLiveData;
+
+import com.oolysolutions.oolys.Act.AddAddress.AddressDetails;
+import com.oolysolutions.oolys.Database.Database;
+
+import java.util.List;
+
+public class OrderViewModel extends AndroidViewModel {
+
+    MutableLiveData<List<AddressDetails>> listMutableLiveData;
+    private Database database;
+
+    public OrderViewModel(@NonNull Application application) {
+        super(application);
+        listMutableLiveData = new MutableLiveData<>();
+        database = Database.getDatabase(application.getApplicationContext());
+        getPendingOrder();
+    }
+
+    private void getPendingOrder() {
+
+    }
+
+    public MutableLiveData<List<AddressDetails>> getListObserver(){
+        return listMutableLiveData;
+    }
+
+    public void getAllAddresses(){
+        List<AddressDetails> addressDetails = database.getHandler().getDropAddresses();
+        if(addressDetails.size() > 0 ){
+            listMutableLiveData.postValue(addressDetails);
+        }else{
+            listMutableLiveData.postValue(null);
+        }
+    }
+
+    public void addAddress(AddressDetails addressDetails){
+        database.getHandler().insertAddress(addressDetails);
+    }
+
+}

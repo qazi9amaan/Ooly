@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.oolysolutions.oolys.Frags.Search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.oolysolutions.oolys.Frags.Home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_booking"
+        android:name="com.oolysolutions.oolys.Frags.Booking.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" />
+    <fragment
+        android:id="@+id/navigation_store"
+        android:name="com.oolysolutions.oolys.Frags.Shop.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+
+</navigation>

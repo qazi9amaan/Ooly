@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:lineHeight="35sp"
+        android:text="what's your\nphone number"
+        android:textColor="#E5A0C1 "
+        android:textSize="34sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  bookng           -->
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:alpha=".6"
+        android:fontFamily="@font/nunito_regular"
+        android:lineHeight="18dp"
+        android:text="we'll send you a verification code"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/heading" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/txt_pin_entry"
+            android:maxLength="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:hint="0"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#B0B0B5"
+            android:textIsSelectable="true"
+            android:textSize="21sp"
+            app:pinLineColors="#B0B0B5"
+            app:pinLineStroke="1dp"
+            app:pinLineStrokeSelected="1dp">
+
+        </com.alimuzaffar.lib.pin.PinEntryEditText>
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/otpVerify"
+            android:maxLength="6"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:hint="0"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#B0B0B5"
+            android:textIsSelectable="true"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/heading"
+            app:layout_constraintTop_toBottomOf="@+id/body"
+            app:pinLineColors="#B0B0B5"
+            app:pinLineStroke="1dp"
+            app:pinLineStrokeSelected="1dp">
+
+        </com.alimuzaffar.lib.pin.PinEntryEditText>
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/sendCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_button_rounded_enabled_list"
+        android:enabled="false"
+        android:padding="10dp"
+        android:text="Send code"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/resendView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sendCode"
+        app:layout_constraintTop_toBottomOf="@+id/sendCode">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:alpha=".6"
+            android:fontFamily="@font/nunito_regular"
+            android:lineHeight="18dp"
+            android:text="Didn't receive a code"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/resendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:alpha=".6"
+            android:fontFamily="@font/nunito_regular"
+            android:lineHeight="18dp"
+            android:text="Resend it."
+            android:textColor="#DF2D82"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progessbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="#F378B2"
+        android:padding="15dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/sendCode"
+        app:layout_constraintEnd_toEndOf="@+id/sendCode"
+        app:layout_constraintStart_toStartOf="@+id/sendCode"
+        app:layout_constraintTop_toTopOf="@+id/sendCode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

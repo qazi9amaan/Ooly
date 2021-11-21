@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito_regular"
+        android:gravity="center"
+        android:text=" Previous orders"
+        android:textColor="#808089"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/waitingTag"
+                android:padding="10dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:backgroundTint="#FFF5EB"
+                android:background="@drawable/rounded_status"
+                android:textColor="#FC820A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waiting"
+                android:textSize="16dp"
+                android:fontFamily="@font/nunito_regular"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/Completed"
+                android:padding="10dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:backgroundTint="#EDFFEB"
+                android:background="@drawable/rounded_status"
+                android:textColor="#00AB56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed"
+                android:textSize="16dp"
+                android:fontFamily="@font/nunito_regular"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/delivering"
+                android:padding="10dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:backgroundTint="#EBF6FF"
+                android:background="@drawable/rounded_status"
+                android:textColor="#1A94FF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivering"
+                android:textSize="16dp"
+                android:fontFamily="@font/nunito_regular"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/canceled"
+                android:padding="10dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:backgroundTint="#FFF0F1"
+                android:background="@drawable/rounded_status"
+                android:textColor="#FF424E"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelled"
+                android:textSize="16dp"
+                android:fontFamily="@font/nunito_regular"
+                />
+
+            <LinearLayout
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:padding="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#808089"
+                    android:alpha=".75"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/04/2020, 04:20"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/nunito_regular"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/pickup_img_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/pickupDetails"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:text="pickup"
+                android:textColor="#27272A"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EBEBF0" />
+
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/live_area"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/dropDetails"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/nunito_regular"
+                android:text=" drop"
+                android:textColor="#27272A"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Content"
+                android:textColor="#27272A"
+                android:textSize="18dp"/>
+
+            <LinearLayout
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:textColor="#808089"
+                    android:alpha=".75"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="amount"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/nunito_regular"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

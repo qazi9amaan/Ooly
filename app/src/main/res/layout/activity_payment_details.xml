@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frags.Home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gradient_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_narrow_left" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginRight="-25dp"
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="4dp"
+            android:scaleType="centerCrop"
+            android:scaleX="-1"
+            android:src="@drawable/marginalia_delivery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <!--  bookng           -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:lineHeight="35sp"
+            android:text="payment details."
+            android:textColor="#E5A0C1 "
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_regular"
+            android:lineHeight="39sp"
+            android:text="baradar on time"
+            android:textColor="#808089"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <LinearLayout
+            android:layout_marginTop="-28dp"
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <View
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+            <LinearLayout
+                android:layout_marginRight="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:letterSpacing=".02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Base amount"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/baseAmount"
+                            android:fontFamily="@font/nunito_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textColor="#808089"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:letterSpacing=".02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Charges"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/charges"
+                            android:fontFamily="@font/nunito_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textColor="#808089"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+            <LinearLayout
+                android:layout_marginRight="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:letterSpacing=".02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Tax"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/taxes"
+                            android:fontFamily="@font/nunito_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textColor="#808089"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:letterSpacing=".02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Discount"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/discount"
+                            android:fontFamily="@font/nunito_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textColor="#808089"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:letterSpacing=".02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Pay at pickup"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/payatpickup"
+                        android:fontFamily="@font/nunito_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#808089"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginLeft="23dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:letterSpacing=".02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Cost"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:fontFamily="@font/nunito_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You've to pay in total "
+                        android:textColor="#808089"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="end|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/finalCost"
+                        android:letterSpacing=".02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#F0EFF1"
+                />
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nunito_regular"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Please pay this amount at the time of delivery. "
+                android:textColor="#808089"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <TextView
+            app:layout_marginBaseline="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/nunito_regular"
+            android:text="By placing an order you agree to our Terms and Conditions and pay this amount at the time of delivery. "
+            android:textColor="#808089"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/pymtbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/pymtbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_button_rounded_enabled_list"
+            android:enabled="false"
+            android:padding="10dp"
+            android:text="Place"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

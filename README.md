@@ -19,9 +19,9 @@ Watch our quick video tutorial to see how easy it is to [send your parcels with 
 4. **Parcel Pickup:** Our team will come to your location to pick up the parcel.
 5. **Track Your Parcel:** Stay updated with real-time tracking until your parcel reaches its destination.
 
-## About Dino Ecosystem
+## About Ooly Ecosystem
 
-Oolys is proud to be a part of the Dino ecosystem, aiming to revolutionize how businesses and individuals send and receive parcels. Learn more about Dino and its offerings [here](https://drive.google.com/file/d/1aWDObChVS4ONbPJ9cIoLB4xE33Vlr9RD/view?usp=sharing)
+Oolys is proud to be a part of the ecosystem, aiming to revolutionize how businesses and individuals send and receive parcels. Learn more about ooly and its offerings [here](https://drive.google.com/file/d/1aWDObChVS4ONbPJ9cIoLB4xE33Vlr9RD/view?usp=sharing)
 
 ![Learn about oolys ecosystem](cover.png)
 

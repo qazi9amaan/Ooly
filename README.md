@@ -9,11 +9,7 @@ Welcome to Oolys, your go-to solution for sending parcels to friends and custome
 - **Wide Reach:** Whether it's across the city or to another state, we've got a wide network to get your parcel where it needs to go.
 - **Secure Deliveries:** We ensure your parcels are handled with care and delivered securely to their destination.
 
-## Video Tutorial
-
-Watch our quick video tutorial to see how easy it is to send your parcels with Oolys:
-
-[Watch How It Works](https://drive.google.com/file/d/1SH1iYYLVbcTxEIhak-l6U82rDeVt-m1b/view?usp=sharing)
+Watch our quick video tutorial to see how easy it is to [send your parcels with Oolys](https://drive.google.com/file/d/1SH1iYYLVbcTxEIhak-l6U82rDeVt-m1b/view?usp=sharing)
 
 
 ## How It Works
@@ -28,6 +24,7 @@ Watch our quick video tutorial to see how easy it is to send your parcels with O
 
 Oolys is proud to be a part of the Dino ecosystem, aiming to revolutionize how businesses and individuals send and receive parcels. Learn more about Dino and its offerings [here](https://ooly.me).
 
-[Watch How Oolys works](https://drive.google.com/file/d/1aWDObChVS4ONbPJ9cIoLB4xE33Vlr9RD/view?usp=sharing)
+## Video Tutorial
+[Laern about oolys ecosystem](https://drive.google.com/file/d/1aWDObChVS4ONbPJ9cIoLB4xE33Vlr9RD/view?usp=sharing)
 
 Thank you for choosing Oolys for your delivery needs. Let's make sending parcels hassle-free together!

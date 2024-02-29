@@ -15,7 +15,6 @@ Watch our quick video tutorial to see how easy it is to send your parcels with O
 
 [Watch How It Works](https://drive.google.com/file/d/1SH1iYYLVbcTxEIhak-l6U82rDeVt-m1b/view?usp=sharing)
 
-Click the image above to watch the video and get a detailed walkthrough of our platform.
 
 ## How It Works
 
@@ -28,5 +27,7 @@ Click the image above to watch the video and get a detailed walkthrough of our p
 ## About Dino Ecosystem
 
 Oolys is proud to be a part of the Dino ecosystem, aiming to revolutionize how businesses and individuals send and receive parcels. Learn more about Dino and its offerings [here](https://ooly.me).
+
+[Watch How Oolys works](https://drive.google.com/file/d/1aWDObChVS4ONbPJ9cIoLB4xE33Vlr9RD/view?usp=sharing)
 
 Thank you for choosing Oolys for your delivery needs. Let's make sending parcels hassle-free together!

@@ -13,7 +13,7 @@ Welcome to Oolys, your go-to solution for sending parcels to friends and custome
 
 Watch our quick video tutorial to see how easy it is to send your parcels with Oolys:
 
-![Watch How It Works](https://drive.google.com/file/d/1SH1iYYLVbcTxEIhak-l6U82rDeVt-m1b/view?usp=sharing)
+[Watch How It Works](https://drive.google.com/file/d/1SH1iYYLVbcTxEIhak-l6U82rDeVt-m1b/view?usp=sharing)
 
 Click the image above to watch the video and get a detailed walkthrough of our platform.
 

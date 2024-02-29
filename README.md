@@ -21,11 +21,8 @@ Watch our quick video tutorial to see how easy it is to [send your parcels with 
 
 ## About Dino Ecosystem
 
-Oolys is proud to be a part of the Dino ecosystem, aiming to revolutionize how businesses and individuals send and receive parcels. Learn more about Dino and its offerings [here](https://ooly.me).
-
-## Video Tutorial
+Oolys is proud to be a part of the Dino ecosystem, aiming to revolutionize how businesses and individuals send and receive parcels. Learn more about Dino and its offerings [here](https://drive.google.com/file/d/1aWDObChVS4ONbPJ9cIoLB4xE33Vlr9RD/view?usp=sharing)
 
 ![Learn about oolys ecosystem](cover.png)
-[Learn about oolys ecosystem](https://drive.google.com/file/d/1aWDObChVS4ONbPJ9cIoLB4xE33Vlr9RD/view?usp=sharing)
 
 Thank you for choosing Oolys for your delivery needs. Let's make sending parcels hassle-free together!
